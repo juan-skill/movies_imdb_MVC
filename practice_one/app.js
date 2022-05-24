@@ -8,6 +8,7 @@ import express from 'express';
 import favicon from 'serve-favicon';
 import bodyParser from 'body-parser';
 import morgan from 'morgan';
+
 import router from './routes/movie-router.js';
 //restFul = require('express-method-override')('_method'),
 import restFul from 'express-method-override';

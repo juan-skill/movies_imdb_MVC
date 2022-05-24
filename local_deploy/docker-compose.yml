@@ -1,10 +1,12 @@
 version: "3.9"
 
 services:
+    
     machine:
         build:
             context: $HOME/repo/node_course/practice_one/
             dockerfile: $HOME/repo/node_course/local_deploy/Dockerfile
+        container_name: api_node
         volumes:
             - $HOME/repo/node_course/practice_one/:/code
             - /code/node_modules
